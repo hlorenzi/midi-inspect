@@ -6,10 +6,31 @@
 		<title>MIDI Inspect</title>
 	</head>
 	
+	<style>
+		html, body
+		{
+			font-family: Verdana, sans-serif;
+			font-size: 0.9em;
+		}
+	</style>
+	
 	<body>
 		<input id="inputFile" type="file"></input>
 		<br>
-		Check the Console for output!
+		<br>
+		Check the Console for extra output!
+		<br>
+		<br>
+		
+		<div style="background-color:#eee;">
+			<b>Fix Quarter-Note Length in Ticks</b>
+			<br>
+			How many ticks should a quarter-note have?
+			<br>
+			<input id="inputNewResampleTicks"></input>
+			<br>
+			<button id="buttonResampleTicksDownload">Fix & Download</a>
+		</div>
 		
 		<script type="module" src="src/main.js"></script>
 	</body>
